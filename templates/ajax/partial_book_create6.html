@@ -1,0 +1,12 @@
+<form method="post" action="{% url 'book_createCINCO' %}" class="js-book-create-formCINCO">
+  {% csrf_token %}
+  <div class="modal-header" style="color: #3875d7;">
+    <h4 class="modal-title">Pregunta</h4>
+  </div>
+  <div class="modal-body">
+    {% include 'ajax/partial_book_form6.html' %}
+  </div>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </div>
+</form>

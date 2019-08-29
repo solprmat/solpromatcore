@@ -1,0 +1,22 @@
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% load widget_tweaks %}
+
+<div class="container-fluid">
+
+    <form method="post" action="{% url 'primer_modulo' %}" class="js-modulo-uno-form">
+        {% csrf_token %}
+        <div class="modal-header">
+            <h4 class="modal-title">Responde las Preguntas</h4>
+        </div>
+        <div class="modal-body">
+            {% include 'conector_preguntas_aleatorias.html' %}
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+            <button type="submit" class="btn btn-primary">Guardar Pregunta</button>
+        </div>
+    </form>
+
+</div>
+
