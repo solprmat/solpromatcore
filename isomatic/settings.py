@@ -13,8 +13,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 import django_heroku
-import sentry_sdk
-from sentry_sdk.integrations.django import DjangoIntegration
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -33,11 +32,7 @@ ALLOWED_HOSTS = []
 
 
 # TODO CONFIGURAR ENVIO DE EMAIL
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'cyateya35439@universidadean.edu.co'
-EMAIL_HOST_PASSWORD = 'camilonike092010  karlakarla2019'
-EMAIL_PORT = '587'
-EMAIL_USE_TLS = True
+
 # TODO CONFIGURAR ENVIO DE EMAIL
 
 # Application definition
@@ -134,10 +129,10 @@ WSGI_APPLICATION = 'isomatic.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd7ov9d1oss98lp',
-        'USER': 'u3nkjknhvma1oa',
-        'PASSWORD': 'pc73b02cd7a56b909e429f6e03be261da492e77728c7f809248d3b43ff7f56fa9',
-        'HOST': 'ec2-3-95-4-226.compute-1.amazonaws.com',
+        'NAME': 'dcf1kn79fdseaa',
+        'USER': 'zdvipxqgnvaqbx',
+        'PASSWORD': '89b68e009afd008ce77e7212052c49d9368273e9bbed4889f2620e8def62724f',
+        'HOST': 'ec2-107-22-211-248.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -209,7 +204,3 @@ django_heroku.settings(locals())
 #     '127.0.0.1',
 #     # ...
 # ]
-sentry_sdk.init(
-    dsn="https://eb4b84dca91240009ef4cf4bead97c75@sentry.io/1503244",
-    integrations=[DjangoIntegration()]
-)
