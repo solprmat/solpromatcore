@@ -9,14 +9,10 @@ $(function () {
             type: 'get',
             dataType: 'json',
             beforeSend: function () {
-                console.log("************  10 * ****************");
                 $("#modal-book .modal-content").html("");
-               console.log("************  11 * ****************");
                 $("#modal-book").modal({backdrop: 'static', keyboard: false});
-                console.log("************  12 * ****************");
             },
             success: function (data) {
-                console.log("************  13 * ****************");
                 $("#modal-book .modal-content").html(data.html_formCINCO);
             }
         });
@@ -31,12 +27,9 @@ $(function () {
             dataType: 'json',
             success: function (data) {
                 if (data.form_is_valid) {
-                    console.log("************  14 * ****************");
                     $("#book-table tbody").html(data.html_book_list);
-                    console.log("************  15 * ****************");
                     $("#modal-book").modal("hide");
                 } else {
-                    console.log("************  16 * ****************");
                     $("#modal-book .modal-content").html(data.html_formCINCO);
                 }
             }
@@ -51,29 +44,19 @@ $(function () {
 
      setTimeout(function () {
         $(".js-create-bookCINCO").click(loadForm).trigger('click');
+         console.log("******* Creando la pregunta 10 **************");
     }, 360000);
 
 
     $("#modal-book").on("submit", ".js-book-create-formCINCO", saveForm);
-    console.log("************  19 * ****************");
+     console.log("******* Guardando la pregunta 10 **************");
 
-
-
-
-
-
-
-
-
-
-
-
-    // Update book
-    $("#book-table").on("click", ".js-update-book", loadForm);
-    $("#modal-book").on("submit", ".js-book-update-form", saveForm);
-
-    // Delete book
-    $("#book-table").on("click", ".js-delete-book", loadForm);
-    $("#modal-book").on("submit", ".js-book-delete-form", saveForm);
+    // // Update book
+    // $("#book-table").on("click", ".js-update-book", loadForm);
+    // $("#modal-book").on("submit", ".js-book-update-form", saveForm);
+    //
+    // // Delete book
+    // $("#book-table").on("click", ".js-delete-book", loadForm);
+    // $("#modal-book").on("submit", ".js-book-delete-form", saveForm);
 
 });

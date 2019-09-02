@@ -9,14 +9,10 @@ $(function () {
             type: 'get',
             dataType: 'json',
             beforeSend: function () {
-                console.log("************  10 * ****************");
                 $("#modal-book .modal-content").html("");
-               console.log("************  11 * ****************");
                 $("#modal-book").modal({backdrop: 'static', keyboard: false});
-                console.log("************  12 * ****************");
             },
             success: function (data) {
-                console.log("************  13 * ****************");
                 $("#modal-book .modal-content").html(data.html_formFINAL);
             }
         });
@@ -31,12 +27,9 @@ $(function () {
             dataType: 'json',
             success: function (data) {
                 if (data.form_is_valid) {
-                    console.log("************  14 * ****************");
                     $("#book-table tbody").html(data.html_book_list);
-                    console.log("************  15 * ****************");
                     $("#modal-book").modal("hide");
                 } else {
-                    console.log("************  16 * ****************");
                     $("#modal-book .modal-content").html(data.html_formFINAL);
                 }
             }
@@ -51,14 +44,13 @@ $(function () {
 
      setTimeout(function () {
         $(".js-create-bookFINAL").click(loadForm).trigger('click');
-        console.log("************  17 * ****************");
         $("#botonGuardarPreguntaUno").prop('disabled', false);
-        console.log("************  18 * ****************");
+        console.log("******* Creando la pregunta 11 - 12 - 13 - 14  **************");
     }, 420000);
 
 
     $("#modal-book").on("submit", ".js-create-bookformFINAL", saveForm);
-    console.log("************  19 * ****************");
+     console.log("******* Guardando la pregunta 11 - 12 - 13 - 14  **************");
 
 
 
