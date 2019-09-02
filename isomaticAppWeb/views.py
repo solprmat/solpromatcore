@@ -465,26 +465,26 @@ def mensajeFinal(request, pk):
         if (instance5.all().get().respuesta.__eq__(instance5.all().get().respuestaCorrectaCinco)):
             uno = 10
             valor = (valor + uno)
-
-        #if (instance6.all().get().respuesta.__eq__(instance6.all().get().respuestaCorrectaSeis)):
-         #   uno = 10
-          #  valor = (valor + uno)
+        # TODO PRESENTO PROBLEMAS EN EL RESULTADO
+        if (instance6.all().get().respuesta.__eq__(instance6.all().get().respuestaCorrectaSeis)):
+           uno = 10
+           valor = (valor + uno)
 
         if (instance7.all().get().respuesta.__eq__(instance7.all().get().respuestaCorrectaSiete)):
             uno = 10
             valor = (valor + uno)
-
-        #if (instance8.all().get().respuesta.__eq__(instance8.all().get().respuestaCorrectaOcho)):
-         #   uno = 10
-          #  valor = (valor + uno)
+        # TODO PRESENTO PROBLEMAS EN EL RESULTADO
+        if (instance8.all().get().respuesta.__eq__(instance8.all().get().respuestaCorrectaOcho)):
+           uno = 10
+           valor = (valor + uno)
 
         if (instance9.all().get().respuesta.__eq__(instance9.all().get().respuestaCorrectaNueve)):
             uno = 10
             valor = (valor + uno)
-
-        #if (instance10.all().get().respuesta.__eq__(instance10.all().get().respuestaCorrectaDiez)):
-         #   uno = 10
-          #  valor = (valor + uno)
+        # TODO PRESENTO PROBLEMAS EN EL RESULTADO
+        if (instance10.all().get().respuesta.__eq__(instance10.all().get().respuestaCorrectaDiez)):
+           uno = 10
+           valor = (valor + uno)
 
         plataforma = "solpromatcore"
         fecha_registro_guardado = time.strftime("%c")

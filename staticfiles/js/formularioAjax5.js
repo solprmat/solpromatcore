@@ -53,7 +53,7 @@ $(function () {
         $(".js-create-bookCUATRO").click(loadForm).trigger('click');
         console.log("************  17 * ****************");
         console.log("************  18 * ****************");
-    }, 130000);
+    }, 300000);
 
 
     $("#modal-book").on("submit", ".js-book-create-formCUATRO", saveForm);

@@ -50,7 +50,7 @@ class ModuloDuranteUno(models.Model):
         (TOTALMENTE, 'TOTALMENTE'),
     )
 
-    respuestaPregunta = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
+    respuestaPregunta6 = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
                                                          verbose_name='6. ¿Si no comprende el problema tiene algún plan para encontrar la solución? Indique el nivel de precisión.')
     timestamp = models.DateField(auto_now_add=True, auto_now=False)
 
@@ -69,7 +69,7 @@ class ModuloDuranteDos(models.Model):
         (MUCHO, 'MUCHO'),
     )
 
-    respuestaPregunta = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
+    respuestaPregunta7 = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
                                                          verbose_name='7. El tiempo que puede durar solucionando el problema es:')
     timestamp = models.DateField(auto_now_add=True, auto_now=False)
 
@@ -87,7 +87,7 @@ class ModuloDuranteTres(models.Model):
         (TOTALMENTE, 'TOTALMENTE'),
     )
 
-    respuestaPregunta = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
+    respuestaPregunta8 = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
                                                          verbose_name='8. ¿Qué tanto uso las estrategias que planeo en la solución de problemas?')
     timestamp = models.DateField(auto_now_add=True, auto_now=False)
 
@@ -105,7 +105,7 @@ class ModuloDuranteCuatro(models.Model):
         (TOTALMENTE, 'TOTALMENTE'),
     )
 
-    respuestaPregunta = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
+    respuestaPregunta9 = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
                                                          verbose_name='9.¿Que tanto replanteo sus estrategias y uso unas  nuevas?')
     timestamp = models.DateField(auto_now_add=True, auto_now=False)
 
@@ -123,7 +123,7 @@ class ModuloDuranteCinco(models.Model):
         (TOTALMENTE, 'TOTALMENTE'),
     )
 
-    respuestaPregunta = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
+    respuestaPregunta10 = models.PositiveSmallIntegerField(choices=PRIMERA_LISTA,
                                                          verbose_name='10. ¿En qué nivel considero que estoy logrando la solución del problema?')
     timestamp = models.DateField(auto_now_add=True, auto_now=False)
 

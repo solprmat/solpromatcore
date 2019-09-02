@@ -54,7 +54,7 @@ $(function () {
         console.log("************  17 * ****************");
         $("#botonGuardarPreguntaUno").prop('disabled', false);
         console.log("************  18 * ****************");
-    }, 240000);
+    }, 420000);
 
 
     $("#modal-book").on("submit", ".js-create-bookformFINAL", saveForm);

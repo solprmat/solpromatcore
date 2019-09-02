@@ -9,5 +9,14 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://ec2-3-95-4-226.compute-1.amazonaws.com:5432/d7ov9d1oss98lp</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="mydatabase" uuid="027afcd9-8637-4a5a-b7c8-0162a81616ba">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Kernel_linux\Desktop\Paula\solpromatcore\mydatabase</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
+    </data-source>
   </component>
 </project>

@@ -53,7 +53,7 @@ $(function () {
         $(".js-create-bookUNO").click(loadForm).trigger('click');
         console.log("************  17 * ****************");
         console.log("************  18 * ****************");
-    }, 55000);
+    }, 120000);
 
 
     $("#modal-book").on("submit", ".js-book-create-formUNO", saveForm);

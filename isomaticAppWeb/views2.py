@@ -145,7 +145,7 @@ def book_createCUATRO(request):
 
 
 # ********************************************
-
+# TODO REVISAR POR QUE ESTA PREGUNTA NO GUARDA
 def save_book_formCINCO(request, form, template_name):
     data = dict()
     if request.method == 'POST':
@@ -168,7 +168,7 @@ def book_createCINCO(request):
         form = ModuloDuranteCoreCinco(request.POST)
     else:
         form = ModuloDuranteCoreCinco()
-    return save_book_formCINCO(request, form, 'ajax/partial_book_create5.html')
+    return save_book_formCINCO(request, form, 'ajax/partial_book_create6.html')
 
 
 # ********************************************

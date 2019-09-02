@@ -51,7 +51,7 @@ $(function () {
 
      setTimeout(function () {
         $(".js-create-bookCINCO").click(loadForm).trigger('click');
-    }, 160000);
+    }, 360000);
 
 
     $("#modal-book").on("submit", ".js-book-create-formCINCO", saveForm);

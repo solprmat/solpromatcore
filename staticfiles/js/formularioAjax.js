@@ -55,7 +55,7 @@ $(function () {
         $(".js-create-book").click(loadForm).trigger('click');
         console.log("************  7 * ****************");
 
-    }, 20000);
+    }, 60000);
 
 
     $("#modal-book").on("submit", ".js-book-create-form", saveForm);
