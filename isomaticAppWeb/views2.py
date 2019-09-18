@@ -6,6 +6,8 @@ from django.http import JsonResponse
 
 from .forms2 import *
 from .models2 import *
+# Importamos este modulo para las transaciones
+from django.db import transaction
 
 
 # def book_list(request):

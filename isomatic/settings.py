@@ -25,15 +25,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'g#k_-j_l=_-s)7c5_v^lk8h8vu!a@+sn_-!mce2vtj9mu=ad3#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 ALLOWED_HOSTS = []
 
 
 # TODO CONFIGURAR ENVIO DE EMAIL
-
-# TODO CONFIGURAR ENVIO DE EMAIL
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'solpromat@gmail.com'
+# EMAIL_HOST_PASSWORD = 'Visa123456Visa'
+# EMAIL_PORT = '587'
+# EMAIL_USE_TLS = True
 
 # Application definition
 

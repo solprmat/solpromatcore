@@ -23,6 +23,8 @@ from .preguntaDiez import PreguntanDiez
 import time
 # Create your views here.
 
+from django.db import transaction
+
 from .models import *
 
 # TODO variable global para guardar la llave foranea del estudiante y utilizarla en las 10 preguntas
@@ -40,12 +42,12 @@ def inicio(request):
 
 
 def formularioUsuario(request):
-    try:
-
-        # titulo = "Hola"
-        # # Todo para saber el usuario que esta autenticado
-        # if request.user.is_authenticated:
-        #     titulo = "Bienvenido %s" %(request.user)
+    # titulo = "Hola"
+    # # Todo para saber el usuario que esta autenticado
+    # if request.user.is_authenticated:
+    #     titulo = "Bienvenido %s" %(request.user)
+    # guardar objeto
+    with transaction.atomic():
         formulario = RegistrarEstudiante(request.POST or None)
         if formulario.is_valid():
             datos = formulario.cleaned_data
@@ -58,13 +60,17 @@ def formularioUsuario(request):
             registrado = True
             # print('''************************ nombre''' + nombreCompleto)
 
-            # guardar objeto
-            objeto = Estudiante.objects.create(nombreCompleto=nombreCompleto,
-                                               sexo=sexo,
-                                               curso=curso, estrato=estrato,
-                                               fecha_registro=fecha_registro, registrado=registrado)
-            objeto.save()
-            pk = objeto.pk
+            try:
+                objeto = Estudiante.objects.create(nombreCompleto=nombreCompleto,
+                                                   sexo=sexo,
+                                                   curso=curso, estrato=estrato,
+                                                   fecha_registro=fecha_registro, registrado=registrado)
+
+                objeto.save()
+                pk = objeto.pk
+            except Exception as e:
+                print("Error al Registrar el Estudiante: {0}".format(e))
+                # messages.error(request, 'Error al Registrar el Estudiante',e.pgerror)
             # print('********************* llave foranea  ', pk)
             # asunto = 'Registro de estudiante Exitoso Plataforma SOLPROMAT-CORE'
             # email_from = settings.EMAIL_HOST_USER
@@ -92,11 +98,8 @@ def formularioUsuario(request):
         context = {
             "el_formulario": formulario,
         }
-        # print('******************************* RETORNANDO EL REQUEST 2' + request.path)
-        return render(request, "formularioUsuario.html", context)
-    except ValueError as e:
-        print("Error al Registrar el Estudiante: {0}".format(e))
-        # messages.error(request, 'Error al Registrar el Estudiante',e.pgerror)
+    # print('******************************* RETORNANDO EL REQUEST 2' + request.path)
+    return render(request, "formularioUsuario.html", context)
 
 
 # ***********************************************************************
@@ -467,24 +470,24 @@ def mensajeFinal(request, pk):
             valor = (valor + uno)
         # TODO PRESENTO PROBLEMAS EN EL RESULTADO
         if (instance6.all().get().respuesta.__eq__(instance6.all().get().respuestaCorrectaSeis)):
-           uno = 10
-           valor = (valor + uno)
+            uno = 10
+            valor = (valor + uno)
 
         if (instance7.all().get().respuesta.__eq__(instance7.all().get().respuestaCorrectaSiete)):
             uno = 10
             valor = (valor + uno)
         # TODO PRESENTO PROBLEMAS EN EL RESULTADO
         if (instance8.all().get().respuesta.__eq__(instance8.all().get().respuestaCorrectaOcho)):
-           uno = 10
-           valor = (valor + uno)
+            uno = 10
+            valor = (valor + uno)
 
         if (instance9.all().get().respuesta.__eq__(instance9.all().get().respuestaCorrectaNueve)):
             uno = 10
             valor = (valor + uno)
         # TODO PRESENTO PROBLEMAS EN EL RESULTADO
         if (instance10.all().get().respuesta.__eq__(instance10.all().get().respuestaCorrectaDiez)):
-           uno = 10
-           valor = (valor + uno)
+            uno = 10
+            valor = (valor + uno)
 
         plataforma = "solpromatcore"
         fecha_registro_guardado = time.strftime("%c")
