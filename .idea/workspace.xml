@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="467a5c08-f6d3-4eaa-90df-fe702f7d3251" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomatic/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/isomatic/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/isomaticAppWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/isomaticAppWeb/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/isomaticAppWeb/views2.py" beforeDir="false" afterPath="$PROJECT_DIR$/isomaticAppWeb/views2.py" afterDir="false" />
     </list>
     <list id="2085eb14-0d11-4c63-a5a0-e03dbb105f69" name="Revert &quot;poniendo el nombre de Paula&quot;" comment="Revert &quot;poniendo el nombre de Paula&quot;&#10;&#10;This reverts commit 8337f645" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isomaticAppWeb/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+            <state relative-caret-position="158">
+              <caret line="524" column="13" lean-forward="true" selection-start-line="524" selection-start-column="13" selection-end-line="524" selection-end-column="13" />
               <folding>
                 <element signature="e#22#54#0" expanded="true" />
               </folding>
@@ -91,7 +91,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/isomatic/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="153">
               <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding>
                 <element signature="e#309#318#0" expanded="true" />
@@ -103,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/isomaticAppWeb/views2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -228,7 +228,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="170" />
     <option name="y" value="91" />
     <option name="width" value="1026" />
@@ -242,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,11 +304,16 @@
               <item name="venv" type="462c0819:PsiDirectoryNode" />
               <item name="Lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="solpromatcore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="solpromatcore" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,7 +322,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/venv" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -324,7 +330,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -444,11 +450,12 @@
       <workItem from="1567743038803" duration="1355000" />
       <workItem from="1567830802891" duration="3923000" />
       <workItem from="1568783702931" duration="2389000" />
+      <workItem from="1573325146132" duration="6721000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451583000" />
+    <option name="totallyTimeSpent" value="458304000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -463,24 +470,24 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30484116" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22768533" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4754601" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.68229955" weight="0.60276073" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.68229955" weight="0.3371522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32843137" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32733223" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5833333" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5826514" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2322239" side_tool="true" weight="0.36196318" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7677761" visible="true" weight="0.04901961" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.7677761" visible="true" weight="0.3535188" />
       <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49924356" weight="0.3297546" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.16503268" />
+      <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -565,17 +572,38 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/isomaticAppWeb/views.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/isomaticAppWeb/views.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/isomaticAppWeb/views.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/isomaticAppWeb/views.py</url>
+          <line>63</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/isomaticAppWeb/views.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/ajax/partial_book_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/ajax/partial_book_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -603,50 +631,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d7duqftmb7n259/schema/public/table/isomaticAppWeb_final">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="58ee8863-d95a-471c-8c93-b324d9641b24">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d7duqftmb7n259/schema/public/table/isomaticAppWeb_estudiante">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="bb5a7571-04f3-48e9-88c9-c475d778a4cb">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d4mo75n0nkg07l/schema/public/table/isomaticAppWeb_pregunta10.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d7duqftmb7n259/schema/public/table/isomaticAppWeb_final" />
+    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d7duqftmb7n259/schema/public/table/isomaticAppWeb_estudiante" />
+    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d4mo75n0nkg07l/schema/public/table/isomaticAppWeb_pregunta10.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fdd33aab-2812-4d3e-923a-f743370144f2/console_2.sql" />
-    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d4mo75n0nkg07l/schema/public/table/isomaticAppWeb_pregunta10">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="bb5a7571-04f3-48e9-88c9-c475d778a4cb">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d4mo75n0nkg07l/schema/public/table/isomaticAppWeb_estudiante">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state projectRestartId="bb5a7571-04f3-48e9-88c9-c475d778a4cb">
-          <filtering>
-            <filter text="" />
-          </filtering>
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d4mo75n0nkg07l/schema/public/table/isomaticAppWeb_pregunta10" />
+    <entry file="das://fdd33aab-2812-4d3e-923a-f743370144f2/database/d4mo75n0nkg07l/schema/public/table/isomaticAppWeb_estudiante" />
     <entry file="file://$PROJECT_DIR$/isomatic/views.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -861,15 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2907">
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/isomatic/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -877,20 +858,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/db/transaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="292" column="4" selection-start-line="292" selection-start-column="4" selection-end-line="292" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/isomaticAppWeb/views2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/2070003363/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1156">
+          <caret line="839" column="31" selection-start-line="839" selection-start-column="29" selection-end-line="839" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/isomaticAppWeb/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
+        <state relative-caret-position="158">
+          <caret line="524" column="13" lean-forward="true" selection-start-line="524" selection-start-column="13" selection-end-line="524" selection-end-column="13" />
           <folding>
             <element signature="e#22#54#0" expanded="true" />
           </folding>
@@ -899,7 +897,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/isomatic/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="153">
           <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <element signature="e#309#318#0" expanded="true" />
